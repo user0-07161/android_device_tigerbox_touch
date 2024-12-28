@@ -1,0 +1,8 @@
+# FSTAB file.
+#<mount point> <type>    <source>                                   <flags>
+
+/boot          emmc      /dev/block/mmcblk0p6                       flags=backup=1;flashimg;
+/recovery      emmc      /dev/block/mmcblk0p7                       flags=backup=1;flashimg;
+/system        ext4      /dev/block/mmcblk0p12                      flags=backup=1;canbewiped;wipeingui;
+/data          ext4      /dev/block/mmcblk0p14                      flags=backup=1;canbewiped;wipeingui;wipeduringfactoryreset;
+/cache         ext4      /dev/block/mmcblk0p12                      flags=backup=1;canbewiped;wipeingui;wipeduringfactoryreset;
